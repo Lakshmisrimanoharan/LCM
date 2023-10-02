@@ -1,0 +1,30 @@
+# LCM
+Lcm of two numbers
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.print("Enter the val_1 : ");
+		int x=sc.nextInt();
+		System.out.print("Enter the val_2 : ");
+		int y=sc.nextInt();
+		int lcm;
+		lcm=(x>y)?x:y;
+		while(lcm>0)
+		{
+		if(lcm%x==0 && lcm%y==0)
+		{
+		    System.out.print(lcm);
+		    break;
+		}
+		lcm++;
+		}
+		
+	}
+}
+
+output:
+Enter the val_1 : 72
+Enter the val_2 : 120
+360
